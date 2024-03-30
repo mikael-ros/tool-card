@@ -1,0 +1,253 @@
+<svg fill="none" viewBox="0 0 1500 1500" width="1500" height="1500" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <!-- This SVG is mostly a work of myself, and is the portion of my profile repo under the MIT license -->
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+                :root{
+                    /* Colors generated with mycolor.space */
+                    --proficiency-proficient:   #46B30C;
+                    --proficiency-good:         #00a353;
+                    --proficiency-average:      #008e75;
+                    --proficiency-belowaverage: #7f986f;
+                    --proficiency-accquainted:  #a66a24;
+                    --proficiency-learning:     #9999cc;
+
+                    --text-color: grey;
+                    --text-color-negative: #DDD;
+                    
+                    --shadow: 16,16,16;
+                    --highlight: 200,200,200;
+                    --light-shadow: #444;
+                    --text-shadow: #555;
+
+                    --border-radius-mild: 1rem;
+                    --border-radius: 2rem;
+
+                    /* Relative to the current size of the readme */
+                    font-size: 1.5em;
+                    font-family: Arial;
+                    color: var(--text-color);
+                }
+
+                * {
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                #tool-card{
+                    width: 100%;
+               
+                    padding: .5rem;
+                    background-color: rgba(var(--shadow),0.5);
+                    border-radius: var(--border-radius-mild);
+                    animation: 1s flash 0s linear;
+                }
+
+                h3 {
+                    color: var(--text-color-negative);
+                    overflow: hidden;
+                    text-wrap: nowrap;
+                }
+
+                #typewriter::before {
+                    content: "";
+                    background-color: rgba(0,0,0,0);
+                    animation: typing-know, typing-canuse, typing-know;
+                    animation-duration: 10s, 10s, 10s;
+                    animation-delay: .5s, 7s, 14s;
+                    animation-iteration-count: 1, 1, infinite;
+                }
+
+                h3 p{
+                    display: inline-block;
+                    width: 1ch;
+                    margin-bottom: 0;
+                    margin-left: .1em;
+                    border-bottom: solid .2em var(--text-color-negative);
+                    animation: .75s blink-caret 1s step-end infinite;
+                }
+
+                h4 {
+                    margin-left: .125em;
+                    width: 23ch;
+                    color: var(--text-color-negative);
+                    font-weight: 600;
+                    text-wrap: nowrap;
+                    line-height: 200%;
+                }
+
+                .emoji {
+                    display: inline-block;
+                    margin: 0 .5em 0 0;
+                    height: 1.5em;
+                    width: 1.5em;
+                    line-height: 1.5em;
+                    background-color: rgba(var(--shadow),0.8);
+                    border-radius: 50%;
+                    text-align: center
+                }
+
+                .category-container > ul {
+                    width: calc(100% - 23ch - 2em);
+                    overflow: hidden;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+
+                ul {
+                    list-style: none;
+                    opacity: 0;
+                    
+                    animation: .75s linear .75s 1 reveal;
+                    animation-fill-mode: forwards;
+                }
+
+                li{
+                    margin: .125rem;
+                    padding: .25rem .5em .125rem .5em;
+                    border-radius: var(--border-radius-mild);
+                    color: var(--text-color-negative);
+                    text-wrap: nowrap;
+                    overflow: hidden;
+                    font-size: 0.8em;
+                    opacity: 0.8;
+                }
+                
+                .category-container{
+                    width: 100%;
+                    min-height: 2rem;
+                    margin: .35rem 0;
+                    padding: .125rem;
+                    display: flex;
+                    align-items: center;
+                    border-radius: var(--border-radius-mild);
+                    background-color: rgba(var(--shadow),0.5);
+                }
+
+                #legend{
+                    min-height: 1.5rem;
+                    max-height: 1.5rem;
+                    width: 100%;
+                    margin-top: 1rem;
+                    font-size: .75rem;
+                    background-color: rgba(var(--highlight),0.2);
+                }
+
+                #legend .emoji{
+                    width: 1.5em;
+                    height: 1.5em;
+                    line-height: 1.5em;
+                    background-color: rgba(var(--highlight),0.2);
+                }
+
+                #legend ul{
+                    left: 15ch;
+                }
+
+                #legend li{
+                    margin: 0.25em;
+                }
+
+                @keyframes reveal{
+                    from { opacity: 0; filter: brightness(160%) }
+                    to { opacity: 1; filter: brightness(100%) }
+                }
+
+                @keyframes flash{
+                    from, to { filter: brightness(100%) }
+                    50% { filter: brightness(150%) }
+                }
+
+                @keyframes blink-caret {
+                    from, to { border-color: transparent }
+                    50% { border-color: var(--text-color-negative); }
+                }
+                
+                /* Inspired by https://codepen.io/alvaromontoro/pen/rNwVpdd */
+                @keyframes typing-know {
+                    00.00%, 65.00% { content: ""; background-color: rgba(0,0,0,0)}
+                    06.25%, 63.00% { content: "I"; }
+                    12.50%, 61.00% { content: "I "; }
+                    18.75%, 59.00% { content: "I k"; }
+                    25.00%, 57.00% { content: "I kn"; }
+                    31.25%, 55.00% { content: "I kno"; }
+                    37.50%, 53.00% { content: "I know"; }
+                    43.75%, 50.00% { content: "I know"; }
+                }
+
+                @keyframes typing-canuse {
+                    00.00% { content: ""; }
+                    06.25% { content: "I"; }
+                    12.50% { content: "I c"; }
+                    18.75% { content: "I ca"; }
+                    25.00% { content: "I can"; }
+                    31.25% { content: "I can "; }
+                    37.50% { content: "I can u"; }
+                    43.75% { content: "I can us"; background-color: rgba(0,0,0,0)}
+                    50.00% {content: "I can use"; background-color: rgba(0,0,0,0)}
+                    54.00% {content: "I can use"; background-color: rgba(0,0,0,0)}
+                    54.01% {content: "I can use"; background-color: rgba(0,50,200,0.5)}
+                    65% {content: ""; background-color: rgba(0,50,200,0.5)}
+                }
+
+                /* * * * * * * * * * * */
+                /* Proficiency classes */
+                /* * * * * * * * * * * */
+
+                .proficient{
+                    background-color: var(--proficiency-proficient);
+                }
+
+                .good{
+                    background-color: var(--proficiency-good);
+                }
+
+                .average{
+                    background-color: var(--proficiency-average);
+                }
+
+                .belowaverage{
+                    background-color: var(--proficiency-belowaverage);
+                }
+
+                .accquainted{
+                    background-color: var(--proficiency-accquainted);
+                }
+
+                .learning{
+                    background-color: var(--proficiency-learning);
+                }
+            </style>
+
+            <article id="tool-card">
+                <h3>🔨 <span id="typewriter"></span><p></p></h3>
+                <section class="category-container">
+                    <h4><span class="emoji">🐵</span> Operating system</h4>
+                    <ul>
+                        <li class="good">Linux
+                            <ul>
+                                <li> Arch (btw) </li>
+                                <li> Linux mint </li>
+                                <li class="average"> Debian </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                
+                <section class="category-container" id="legend">
+                    <h4><span class="emoji">🗺️</span> Legend</h4>
+                    <ul>
+                        <li class="proficient">💪 Proficient</li>
+                        <li class="good">👍 Good</li>
+                        <li class="average">👌 Average</li>
+                        <li class="belowaverage">🤏 Below average</li>
+                        <li class="accquainted">💡 Accquainted</li>
+                        <li class="learning">🧠 Learning</li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </foreignObject>
+</svg>
