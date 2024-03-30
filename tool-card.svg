@@ -91,12 +91,17 @@
                 .category-container > ul {
                     width: calc(100% - 23ch - 2em);
                     overflow: hidden;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
+                    
+                }
+
+                .vertical {
+                    flex-direction: column;
                 }
 
                 ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
                     list-style: none;
                     opacity: 0;
                     
@@ -106,7 +111,7 @@
 
                 li{
                     margin: .125rem;
-                    padding: .25rem .5em .125rem .5em;
+                    padding: .25rem .5em;
                     border-radius: var(--border-radius-mild);
                     color: var(--text-color-negative);
                     text-wrap: nowrap;
@@ -224,15 +229,95 @@
             <article id="tool-card">
                 <h3>🔨 <span id="typewriter"></span><p></p></h3>
                 <section class="category-container">
-                    <h4><span class="emoji">🐵</span> Operating system</h4>
+                    <h4><span class="emoji">💾</span> Operating system</h4>
                     <ul>
-                        <li class="good">Linux
+                        <li class="proficient"> 🪟 Windows
+                            <ul>
+                                <li> XP to 11 </li>
+                            </ul>
+                        </li>
+                        <li class="good"> 🐧 Linux
                             <ul>
                                 <li> Arch (btw) </li>
                                 <li> Linux mint </li>
                                 <li class="average"> Debian </li>
                             </ul>
                         </li>
+                    </ul>
+                </section>
+
+                <section class="category-container">
+                    <h4><span class="emoji">⌨️</span> IDEs</h4>
+                    <ul>
+                        <li class="good"> 🔷 Visual Studio Code (VSCodium)</li>
+                        <li class="average"> 🧠 JetBrains
+                            <ul>
+                                <li> IntelliJ IDEA </li>
+                                <li class="belowaverage"> PyCharm </li>
+                                <li class="belowaverage"> RustRover </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="category-container">
+                    <h4><span class="emoji">👾</span> Programming</h4>
+                    <ul>
+                        <li class="proficient"> 📽️ Marp </li>
+                        <li class="good"> 🌿 Git</li>
+                        <li class="average"> ☕ Java stuff
+                            <ul>
+                                <li class="average"> Gradle </li>
+                                <li class="average"> Fabric API </li>
+                                <li class="accquainted"> Spring boot </li>
+                            </ul>
+                        </li>
+                        <li class="average"> 🚀 Astro.js </li>
+                    </ul>
+                </section>
+
+                <section class="category-container">
+                    <h4><span class="emoji">📸</span> Graphic design</h4>
+                    <ul>
+                        <li class="good"> 🔺 Adobe
+                            <ul>
+                                <li> 🟦 Photoshop </li>
+                                <li> 📐Figma </li>
+                                <li class="belowaverage"> 🖋️ Illustrator </li>
+                            </ul>
+                        </li>
+                        <li class="average"> 🟪 Affinity Photo</li>
+                        <li class="average"> 🖌️ GIMP</li>
+                        <li class="average"> 🫛 Photopea</li>
+                    </ul>
+                </section>
+
+                <section class="category-container">
+                    <h4><span class="emoji">🎞️</span> Video creation</h4>
+                    <ul>
+                        <li class="average"> 🔺 Adobe
+                            <ul>
+                                <li> 🟪 Premiere </li>
+                                <li class="belowaverage"> 🎬 After Effects </li>
+                            </ul>
+                        </li>
+                        <li class="average"> 🎤 Audacity</li>
+                    </ul>
+                </section>
+
+                <section class="category-container">
+                    <h4><span class="emoji">📦</span> 3D </h4>
+                    <ul>
+                        <li class="average"> 💎 Cura </li>
+                        <li class="belowaverage"> 🪑 Fusion 360</li>
+                    </ul>
+                </section>
+
+                <section class="category-container">
+                    <h4><span class="emoji">🎮</span> Game development </h4>
+                    <ul>
+                        <li class="learning"> 🧑‍🚀 Unreal Engine </li>
+                        <li class="learning"> 🤖 Godot</li>
                     </ul>
                 </section>
                 

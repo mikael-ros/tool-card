@@ -38,6 +38,23 @@ Every category is contained in it's own ``<section class="category-container"``,
 </section>
 ```
 
+##### 🗃️ Nested categories
+You can also nest categories, by putting an ``<ul>`` inside of one of the ``<li>``. This works infinitely, though I wouldn't reccomend it. You can both color the whole ``<ul>`` the same color and have specific elements be a certain color.
+```html
+<section class="category-container">
+    <h4><span class="emoji">🔵</span> Category</h4>
+    <ul>
+        <li class="proficient"> 🦝 Racoon Tools
+            <ul>
+                <li> 😋 Silly </li>
+                <li> 🍇 Grapes </li>
+            </ul>
+        </li>
+    </ul>
+</section>
+```
+To make it display in a vertical column, add the class ``vertical`` to the inner ``<ul>`` element. This simply sets the ``flex-direction`` property to ``column``.
+
 ##### 😜 Emojis/icons
 Either put the emoji inline, in the ``<h4>`` tag or put it inside ``<span class="emoji">😎</span>``. The ``emoji`` class will make it into it's own little "bubble".
 
@@ -56,6 +73,7 @@ These are marked by wrapping the corresponding skill in an ``<li>`` element with
 ```html
 <li class="proficient">🦝 Racoon Tool</li>
 ```
+Though you can put this class on any element, as it just changes the ``background-color`` property.
 ##### 🖌 Colors
 There are 6 colors corresponding to the 6 proficiencies, which you can change easily by editing CSS variables at the top of the SVG. 
 
