@@ -4,6 +4,7 @@
 This is a profile card made in a SVG, that can be imported into a GitHub profile readme (or elsewhere). It works by using a ``foreignObject`` inside of an SVG, which allows you to use HTML and CSS beyond what the GitHub sanitization process allows.
 
 This is based on my other profile project, [GitHub Language Card](https://github.com/mikael-ros/profile-card). The main difference is the layout, which here is designed to be wider and more accomodating, since tools are likely to be a longer list.
+
 ---
 
 ## 🔨 Usage
