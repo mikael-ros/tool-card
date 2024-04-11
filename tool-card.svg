@@ -273,9 +273,11 @@
                             </ul>
                         </li>
 <li class="average"> 🖥 Web development
+<ul>
                         <li class="average"> 🚀 Astro.js </li>
                         <li class="average"> 🌐 Netlify </li>
                         <li class="learning"> 🔩 Solid.js </li>
+</ul>
 </li>
                     </ul>
                 </section>
