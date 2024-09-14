@@ -249,12 +249,12 @@
                 <section class="category-container">
                     <h4><span class="emoji">⌨️</span> IDEs</h4>
                     <ul>
-                        <li class="good"> 🔷 Visual Studio Code (VSCodium)</li>
-                        <li class="average"> 🧠 JetBrains
+                        <li class="proficient"> 🔷 Visual Studio Code</li>
+                        <li class="good"> 🧠 JetBrains
                             <ul>
                                 <li> IntelliJ IDEA </li>
                                 <li class="belowaverage"> PyCharm </li>
-                                <li class="belowaverage"> RustRover </li>
+                                <li class="acquainted"> RustRover </li>
                             </ul>
                         </li>
                     </ul>
@@ -264,19 +264,25 @@
                     <h4><span class="emoji">👾</span> Programming</h4>
                     <ul>
                         <li class="proficient"> 📽️ Marp </li>
-                        <li class="good"> 🌿 Git</li>
+                        <li class="average"> 🌿 Git</li>
                         <li class="average"> ☕ Java stuff
                             <ul>
                                 <li class="average"> Gradle </li>
                                 <li class="average"> Fabric API </li>
                                 <li class="accquainted"> Spring boot </li>
+                                <li class="accquainted"> Swing </li>
                             </ul>
                         </li>
-<li class="average"> 🖥 Web development
+                        <li class="average"> 🔗 Haskell stuff
+                            <ul>
+                                <li class="accquainted"> Stack </li>
+                            </ul>
+                        </li>
+<li class="good"> 🖥 Web development
 <ul>
-                        <li class="average"> 🚀 Astro.js </li>
-                        <li class="average"> 🌐 Netlify </li>
-                        <li class="learning"> 🔩 Solid.js </li>
+                        <li class="good"> 🚀 Astro.js </li>
+                        <li class="good"> 🌐 Netlify </li>
+                        <li class="good"> 🔩 Solid.js </li>
 </ul>
 </li>
                     </ul>
@@ -315,7 +321,7 @@
                     <h4><span class="emoji">📦</span> 3D </h4>
                     <ul>
                         <li class="average"> 💎 Cura</li>
-                        <li class="belowaverage"> 🪑 Fusion 360</li>
+                        <li class="accquainted"> 🪑 Fusion 360</li>
                         <li class="accquainted"> 🟠 Blender</li>
                     </ul>
                 </section>
