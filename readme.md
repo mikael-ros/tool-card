@@ -1,3 +1,8 @@
+> [!WARNING]
+> This project is deprecated. I refer you to [profile-card](https://www.github.com/mikael-ros/profile-card) instead.
+
+---
+
 # 🔨 GitHub Tool Card
 ![](./tool-card.svg)
 
